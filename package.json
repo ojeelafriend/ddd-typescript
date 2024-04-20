@@ -1,0 +1,31 @@
+{
+  "name": "typescript-node-example",
+  "version": "0.1.0",
+  "description": "Template para proyectos nodejs con typescript, utilizando DDD y Hexagonal",
+  "main": "server.js",
+  "scripts": {
+    "start": "tsc && node ./dist/src/Api/server.js",
+    "dev": "node ./dist/src/Api/server.js",
+    "spec": "tsc --watch",
+    "typescript": "tsc --init",
+    "test": "jest"
+  },
+  "keywords": [
+    "github template",
+    "Nodejs",
+    "DDD",
+    "Typescript",
+    "Hexagonal Architecture"
+  ],
+  "author": "Alejo R. Solis",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
+  }
+}
