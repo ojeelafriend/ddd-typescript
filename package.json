@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "tsc && node ./dist/src/Api/server.js",
-    "dev": "node ./dist/src/Api/server.js",
+    "dev": "nodemon ./dist/src/Api/server.js",
     "spec": "tsc --watch",
     "typescript": "tsc --init",
     "test": "jest"
@@ -21,11 +21,28 @@
   "license": "GPL-3.0-only",
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.3.2"
+  },
+  "jest": {
+    "verbose": true,
+    "silent": true,
+    "detectOpenHandles": true,
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/",
+      "/test/"
+    ]
   }
 }
