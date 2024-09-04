@@ -1,5 +1,5 @@
 import { App } from "../../../src/Api/http/express";
-import database from "../../../src/Contexts/Shared/database";
+import database from "../../../src/Contexts/Shared/framework/database";
 
 describe("⚡️", () => {
   it('Deberia devolver "Hello World" | GET /api ', async () => {
